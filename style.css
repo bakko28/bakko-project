@@ -1,0 +1,130 @@
+@font-face {
+    font-family: StyreneAWeb;
+    font-weight: 600;
+    src: url(fonts/StyreneAWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: StyreneAWeb;
+    font-weight: 500;
+    src:url(fonts/StyreneAWeb-Medium.ttf);
+}
+
+@font-face {
+    font-family: StyreneAWeb;
+    font-weight: 400;
+    src: url(fonts/StyreneAWeb-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    padding: 8px;
+    display: flex;
+    background-color: #1A1A2E;
+    align-items: start;
+    justify-content: center;
+    font-family: StyreneAWeb;
+}
+
+header {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo-text {
+    cursor: pointer;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #E94560;
+}
+
+header .userbox {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .userbox .user-info {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .userbox .user-info .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+header .userbox .user-info .textbox .balance {
+    color: #E94560;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+header .userbox .user-info .avatar {
+    background-color: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+}
+
+header .userbox button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+header nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav button {
+    cursor: pointer;
+    padding: 24px 19px;
+    border: 2px #E94560 solid;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: StyreneAWeb;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 500;
+    gap: 8px;
+    transition: 1s background-color ease-in-out;
+}
+
+header nav button:hover {
+    transition: 1s background-color ease-in-out;
+    background-color: #E94560;
+}
+
+header nav .active-btn {
+    background-color: #E94560;
+}
