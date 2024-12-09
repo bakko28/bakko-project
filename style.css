@@ -22,17 +22,54 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     padding: 8px;
     display: flex;
     flex-direction: column;
     background-color: #1A1A2E;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     justify-content: center;
     font-family: StyreneAWeb;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A1A2E;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #16213E;
+    border-radius: 10px;
+    border: 3px solid #16213E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #727272;
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-vertical {
+    width: 10px;
 }
 
 header {
@@ -120,11 +157,11 @@ header nav button {
     line-height: 26px;
     font-weight: 500;
     gap: 8px;
-    transition: 1s background-color ease-in-out;
+    transition: 0.3s background-color ease-in-out;
 }
 
 header nav button:hover {
-    transition: 1s background-color ease-in-out;
+    transition: 0.3s background-color ease-in-out;
     background-color: #E94560;
 }
 
@@ -137,25 +174,23 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
-    border: 2px red solid;
     padding: 8px;
 }
 
-main .history-box {
-    width: 20%;
-    height: 100%;
-    border: 2px red solid;
-}
-
 main .game-info-box {
-    border: 2px green solid;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     width: 100%;
     height: 100%;
 }
 
 main .card {
+    cursor: pointer;
     padding: 8px;
-    border: 2px red solid;
     width: 270px;
     display: flex;
     gap: 8px;
@@ -174,7 +209,7 @@ main .card .textbox {
 main .card .textbox .case-name {
     font-size: 24px;
     line-height: 26px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -185,7 +220,7 @@ main .card .textbox .count {
     line-height: 18px;
 }
 
-main .card button {
+main .card button, main .card-case button  {
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -199,8 +234,127 @@ main .card button {
     gap: 8px;
     border-radius: 16px;
     padding: 19px 24px;
+    transition: 0.3s background-color ease-in-out;
+}
+
+main .card button:hover, main .card-case button:hover {
+    background-color: #E94560;
+    transition: 0.3s background-color ease-in-out;
+}
+
+main .card-case button {
+    width: 300px;
 }
 
 main .cardbox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.case-name {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+main .card-case {
+    gap: 16px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .case-info {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .case-inventory {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(7, 0.1fr);
+    gap: 8px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+main .case-inventory .card {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 220px;
+    height: 320px;
+    background-color: #16213E;
+}
+
+main .case-inventory .card img {
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+}
+
+main .case-inventory .card .radial {
+    z-index: 1;
+    top: -10px;
+    right: -10px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    filter: blur(80px);
+}
+
+main .case-inventory .card .line {
+    border-radius: 8px;
+    width: 100%;
+    height: 6px;
+}
+
+main .case-inventory .card .price-weapon {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 2px 8px;
+    border: 2px #fff solid;
+    border-radius: 8px;
+}
+
+main .case-inventory .card .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2px;
+}
+
+main .case-inventory .card .textbox .weapon {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+main .case-inventory .card .textbox .item-name {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
 }
