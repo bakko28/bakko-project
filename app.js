@@ -31,7 +31,7 @@ const cases = [
     {case_name: 'Кейс змеиный укус', case_id: 'snakebite-case', price: 159, count_item: 40, image: 'img/cases/middle-60b4fc07e1562.png'},
 ];
 
-function openLink(id) {
+function openLinkCase(id) {
     console.log(id)
 
     const caseItem = cases.find(item => item.case_id === id);
@@ -74,12 +74,22 @@ document.addEventListener('DOMContentLoaded', () => {
         openCaseButton.forEach(button => {
             button.addEventListener('click', () => {
                 console.log('Кнопка нажата: ' + button.id);
-                openLink(button.id);
+                openLinkCase(button.id);
             })
         })
     }
 });
 
+const navButtons = document.querySelectorAll('nav button')
+navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        openLink(button.id)
+    })
+})
 
+function openLink(id) {
+    console.log(id)
+    window.location.href = `${id}.html`;
+}
 
 generateCases(cases);
