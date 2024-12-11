@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-text: "Berkshire Swash", serif;
+    --paragraph-text: "Poppins", sans-serif;
+    --main-color: #3F1A08;
+    --secondary-color: #FCE1AB;
+    --three-color: #1E8B97;
+    --text-color: #0e0e0e;
+}
+
+body {
+    padding: 8px;
+    background-color: #F6F1EB;
+    display: flex;
+    gap: 240px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99.5vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #F6F1EB;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3F1A08 ;
+    border-radius: 20px;
+    border: 2px solid #F6F1EB;
+}
+
+.start-section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.start-section .background {
+    /* display: none; */
+    z-index: -1;
+    position: absolute;
+    top: -130px;
+    left: -200px;
+}
+
+.start-section .person-image-first {
+    /* display: none; */
+    position: relative;
+    width: 800px;
+}
+
+.start-section .textbox {
+    position: relative;
+    left: -80px;
+    top: 80px;
+}
+
+.start-section .textbox .heading-text {
+    font-family: var(--heading-text);
+    color: var(--main-color);
+    font-size: 210px;
+    line-height: 260px;
+}
+
+.start-section .textbox .paragraph-text {
+    color: var(--text-color);
+    font-family: var(--paragraph-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-section .background {
+    z-index: -1;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.welcome-section .textbox {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section .textbox .heading-text {
+    color: var(--main-color);
+    font-family: var(--heading-text);
+    font-size: 128px;
+}
+
+.welcome-section .textbox .paragraph-text {
+    text-align: center;
+    width: 60%;
+    color: var(--text-color);
+    font-family: var(--paragraph-text);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.contents-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents-section .background {
+    z-index: -1;
+    position: absolute;
+}
+
+.contents-section .person-image-second {
+    width: 500px;
+}
+
+.contents-section .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    width: 100%;
+}
+
+.contents-section .textbox .heading-text {
+    font-family: var(--heading-text);
+    color: var(--main-color);
+    font-size: 96px;
+}
+
+.contents-section .textbox .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 86px 12px;
+}
+
+.contents-section .textbox .list-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+}
+
+.contents-section .textbox .list-card .card-number {
+    font-family: var(--heading-text);
+    color: #fff;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 128px;
+    width: 168px;
+    height: 128px;
+}
+
+#card1 .card-number, #card4 .card-number, #card5 .card-number{
+    background-color: var(--three-color);
+}
+
+#card2 .card-number, #card3 .card-number, #card6 .card-number{
+    background-color: #77441D;
+}
+
+.contents-section .textbox .list-card .textbox {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.contents-section .textbox .list-card .textbox .heading-text {
+    color: var(--text-color);
+    font-size: 48px;
+}
+
+.contents-section .textbox .list-card .textbox .paragraph-text {
+    color: var(--text-color);
+    font-family: var(--paragraph-text);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.realm-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 56px;
+    height: 100vh;
+}
+
+.realm-section .background {
+    z-index: -1;
+    position: absolute;
+}
+
+.realm-section .heading-text {
+    font-family: var(--heading-text);
+    color: var(--main-color);
+    font-size: 80px;
+}
+
+.realm-section .paragraph-box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
+
+.realm-section .paragraph-box .paragraph-text {
+    width: 37%;
+    font-size: 32px;
+    font-family: var(--paragraph-text);
+    color: var(--text-color);
+}
+
+.sightings-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    gap: 108px;
+    height: 100vh;
+}
+
+.sightings-section .background {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.sightings-section .picture-image {
+    position: relative;
+}
+
+.sightings-section .cardbox {
+    display: flex;
+    gap: 59px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sightings-section .cardbox .card {
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sightings-section .cardbox .card .textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sightings-section .cardbox .card .textbox .heading-text {
+    font-family: var(--heading-text);
+    font-size: 48px;
+    color: var(--text-color);
+}
+
+.sightings-section .cardbox .card .textbox .paragraph-text {
+    font-family: var(--paragraph-text);
+    font-size: 32px;
+    width: 83%;
+    color: var(--text-color);
+}
+
+.card-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-section .background {
+    position: absolute;
+    z-index: -1;
+}
+
+.card-section .card {
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-section .card .heading-text {
+    font-family: var(--heading-text);
+    color: var(--text-color);
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.card-section .card .paragraph-text {
+    text-align: center;
+    width: 65%;
+    font-family: var(--paragraph-text);
+    color: var(--text-color);
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.king-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 49px;
+    height: 100vh;
+}
+
+.king-section .background {
+    position: absolute;
+    z-index: -1;
+}
+
+.king-section .textbox-left, .king-section .textbox-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 24px;
+    height: 80%;
+    width: 18%;
+}
+
+.king-section .textbox-right {
+    justify-content: end;
+}
+
+.king-section .textbox-left .heading-text, .king-section .textbox-right .heading-text {
+    font-family: var(--heading-text);
+    color: var(--text-color);
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.king-section .textbox-left .paragraph-text, .king-section .textbox-right .paragraph-text {
+    font-family: var(--paragraph-text);
+    color: var(--text-color);
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.back-link {
+    top: 16px;
+    left: 16px;
+    z-index: 999;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+}
+
+.count-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.count-section .background {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.count-section .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.count-section .textbox .heading-text {
+    color: var(--main-color);
+    font-family: var(--heading-text);
+    font-size: 240px;
+    line-height: 280px;
+}
+
+.count-section .textbox .head-paragraph-text {
+    font-family: var(--paragraph-text);
+    color: var(--text-color);
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.count-section .paragraph-text {
+    font-size: 28px;
+    line-height: 36px;
+    font-family: var(--paragraph-text);
+    color: var(--text-color);
+    text-align: center;
+    width: 37%;
+}
+
+.last-section {
+    gap: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.last-section .background {
+    position: absolute;
+    z-index: -1;
+}
+
+.last-section .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 90px;
+    width: 40.09%;
+}
+
+.last-section .textbox .heading-text {
+    font-family: var(--heading-text);
+    color: var(--main-color);
+    font-size: 80px;
+    line-height: 94px;
+}
+
+.last-section .textbox .paragraph-text {
+    font-family: var(--paragraph-text);
+    color: var(--text-color);
+    font-size: 32px;
+    line-height: 48px;
+}
