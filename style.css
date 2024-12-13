@@ -6,12 +6,29 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --poppins: "Poppins", serif;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 a {
     text-decoration: none;
+}
+
+.cardbox {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
 .card {
