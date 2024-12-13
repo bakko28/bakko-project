@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FDEB71;
+    --background-color: #000000;
+    --secondary-color: #74FDFD;
+    --text-color: #ffffff;
+    --heading-text: "Zen Dots", sans-serif;
+    --paragraph-text: "DM Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    /* width: 100%; */
+    height: auto;
+    background-color: var(--background-color);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.start-section {
+    display: flex;
+    gap: 18px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 2px red solid;
+    height: 100vh;
+    width: 100%;
+}
+
+.start-section .background {
+    position: absolute;
+    z-index: -1;
+    right: -150px;
+}
+
+.start-section .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.start-section .person-image {
+    width: 50%;
+}
+
+.start-section .textbox .heading-text {
+    font-family: var(--heading-text);
+    font-size: clamp(7rem, 15rem, 24rem);
+    color: var(--main-color);
+}
+
+.start-section .textbox .paragraph-text {
+    width: 70%;
+    font-family: var(--paragraph-text);
+    font-size: clamp(2rem, 4rem, 6rem);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
