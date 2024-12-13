@@ -148,7 +148,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    border: 2px red solid;
 }
 
 .table-section .background {
@@ -158,5 +157,59 @@ body::-webkit-scrollbar-thumb {
 }
 
 .table-section .textbox-left, .textbox-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
     color: var(--text-color);
+    gap: 108px;
+}
+
+.table-section .textbox-right {
+    align-items: start;
+}  
+
+.table-section .textbox-left .card, .textbox-right .card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.textbox-right .card {
+    flex-direction: row-reverse;
+}
+
+.table-section .textbox-left .card .textbox, .textbox-right .card .textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: end;
+}
+
+.textbox-right .card .textbox {
+    align-items: start;
+}
+
+.table-section .textbox-left .card .heading-text, .textbox-right .card .heading-text {
+    text-align: end;
+    font-size: clamp(1rem, 2rem, 4rem);
+    font-family: var(--heading-text);
+}
+
+.table-section .textbox-left .card .number, .textbox-right .card .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    font-size: clamp(1rem, 2rem, 4rem);
+    color: var(--secondary-color);
+    border: 3px var(--secondary-color) solid;
+    font-family: var(--heading-text);
+}
+
+.table-section .textbox-left .card .paragraph-text, .textbox-right .card .paragraph-text {
+    font-family: var(--paragraph-text);
+    font-size: clamp(0.5rem, 1.4rem, 3rem);
 }
