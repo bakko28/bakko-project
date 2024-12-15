@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "StyreneAWeb", sans-serif;
+    font-weight: 600;
+    src: url(fonts/StyreneAWeb-Bold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-text: "StyreneAWeb", sans-serif;
+    --paragraph-text: "Poppins", sans-serif;
+    --background-color: #960301;
+    --main-color: #FEF7AE;
+    --text-color: #FFFFFF;
+}
+
+.back-link {
+    color: #ffffff;
+    top: 16px;
+    left: 16px;
+    z-index: 999;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+}
+
+body {
+    padding: 16px;
+    gap: 16px;
+    background-color: var(--background-color);
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: 16px;
+    width: 100%;
+    border: 2px green solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-family: var(--heading-text);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: var(--main-color);
+}
+
+header .logo span {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+header .auth-box {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .auth-box button {
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: var(--paragraph-text);
+    font-weight: 500;
+    padding: 16px 48px;
+    border-radius: 16px;
+    outline: none;
+}
+
+header .auth-box button:nth-child(1) {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 3px var(--main-color) solid;
+}
+
+header .auth-box button:nth-child(2) {
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border: 3px var(--main-color) solid;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    border: 2px green solid;
+}
+
+main .info-page {
+    gap: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    border: 2px blue solid;
+}
+
+.textbox {
+    width: 40%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.textbox .heading-text {
+    color: var(--main-color);
+    font-family: var(--heading-text);
+    font-size: 96px;
+    line-height: 96px;
+    font-weight: 600;
+}
+
+.textbox .paragraph-text {
+    color: var(--text-color);
+    font-family: var(--paragraph-text);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.textbox .buttonbox {
+    width: 100%;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textbox .buttonbox button {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 16px;
+    padding: 24px 48px;
+    color: var(--main-color);
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: var(--paragraph-text);
+    background-color: transparent;
+    border: 3px var(--main-color) solid;
+}
+
+.textbox .buttonbox .linksbox {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+footer {
+    width: 100%;
+    border: 2px green solid;
+}
