@@ -4,6 +4,12 @@
     src: url(fonts/StyreneAWeb-Bold.ttf);
 }
 
+@font-face {
+    font-family: "StyreneAWeb", sans-serif;
+    font-weight: 900;
+    src: url(fonts/StyreneAWeb-BlackItalic.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -233,7 +239,6 @@ main .cardbox-page .textbox .cardbox .card button {
 }
 
 main .email-page {
-    border: 2px blue solid;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -242,7 +247,7 @@ main .email-page {
     gap: 48px;
 }
 
-main .email-page .textbox button {
+main .textbox button {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -257,4 +262,44 @@ main .email-page .textbox button {
     background-color: transparent;
     border-radius: 16px;
     border: 3px var(--main-color) solid;
+}
+
+
+main .buy-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+main .buy-page .button-box button{
+    width: 69%;
+}
+
+.button-box {
+    gap: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-box .price {
+    display: flex;
+    align-items: end;
+    font-family: var(--heading-text);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    gap: 4px;
+    color: var(--main-color);
+}
+
+.button-box .price span {
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--text-color);
 }
