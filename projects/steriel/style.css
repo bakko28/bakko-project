@@ -48,10 +48,24 @@ body {
     justify-content: center;
 }
 
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color) ;
+    border-radius: 20px;
+    border: 2px solid var(--background-color);
+}
+
 header {
     padding: 16px;
     width: 100%;
-    border: 2px green solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +121,6 @@ main {
     justify-content: center;
     gap: 16px;
     width: 100%;
-    border: 2px green solid;
 }
 
 main .info-page {
@@ -172,11 +185,6 @@ main .info-page {
     align-items: center;
     justify-content: center;
     gap: 8px;
-}
-
-footer {
-    width: 100%;
-    border: 2px green solid;
 }
 
 main .cardbox-page {
@@ -303,3 +311,4 @@ main .buy-page .button-box button{
     line-height: 24px;
     color: var(--text-color);
 }
+
