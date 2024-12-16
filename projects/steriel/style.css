@@ -180,7 +180,6 @@ main .cardbox-page {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    border: 2px blue solid;
 }
 
 main .cardbox-page .textbox .cardbox {
@@ -231,4 +230,31 @@ main .cardbox-page .textbox .cardbox .card button {
     border-radius: 16px;
     color: var(--background-color);
     width: 100%;
+}
+
+main .email-page {
+    border: 2px blue solid;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+main .email-page .textbox button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 48px;
+    gap: 8px;
+    font-family: var(--paragraph-text);
+    color: var(--main-color);
+    font-size: 24px;
+    line-height: 28px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 3px var(--main-color) solid;
 }
