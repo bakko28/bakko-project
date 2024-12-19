@@ -109,16 +109,20 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     width: 100%;
     height: 100%;
-    gap: 16px;
-    border: 2px red solid;
+    gap: 32px;
 }
 
 .cardbox-layout .cardbox {
     width: 100%;
     gap: 32px;
+    padding: 0px 32px;
     display: flex;
     align-items: center;
     justify-content: start;
+}
+
+.cardbox-layout .cardbox.middle {
+    justify-content: end;
 }
 
 .cardbox-layout .cardbox .card {
@@ -150,21 +154,29 @@ body::-webkit-scrollbar-thumb {
     line-height: 36px;
 }
 
-.cardbox-layout .cardbox.middle {
-    border: 2px red solid;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
 .cardbox-layout .cardbox.middle .card .textbox {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 8px;
+    padding: 32px 124px 16px 16px;
     background-color: #114E00;
+}
+
+.cardbox-layout .cardbox.down .card .heading-text {
+    position: relative;
+}
+
+.cardbox-layout .cardbox.down .card .heading-text {
+    position: absolute;
+    left: 25px;
+}
+
+.cardbox-layout .cardbox.middle .card .heading-text {
+    position: absolute;
+    left: 24px;
+    top: -35px;
 }
 
 .cardbox-layout .cardbox.middle .card .textbox .contact-info {
@@ -184,6 +196,46 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
     color: #fff;
     background-color: transparent;
+}
+
+.cardbox .card .russian-language, .cardbox .card .english-language{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #114E00;
+    padding: 8px;
+}
+
+.cardbox .card .russian-language .block-box, .cardbox .card .english-language .block-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.block {
+    border-radius: 8px;
+    width: 48px;
+    height: 18px;
+    background-color: #fff;
+}
+
+.block.active {
+    background-color: var(--text-color);
+}
+
+.cardbox .card .russian-language {
+    padding: 48px 48px 8px 16px;
+}
+
+.cardbox .card .english-language {
+    padding: 8px 48px 36px 16px;
+}
+.cardbox .card .russian-language .paragraph-text, .cardbox .card  .english-language .paragraph-text{
+    padding: 0px;
 }
 
 nav {
@@ -214,5 +266,33 @@ nav .line {
 nav .line.active {
     height: 180px;
     background-color: var(--secondary-color);
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 16px 24px;
+    gap: 16px;
+    border-radius: 64px;
+    width: 100%;
+    border: 6px var(--heading-text-color) solid;
+}
+
+.skills-box .heading-text {
+    font-size: 96px;
+    line-height: 96px;
+    font-family: var(--design-font);
+    color: var(--heading-text-color);
+}
+
+.skills-box .skills-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 100%;
+    gap: 48px;
 }
 
