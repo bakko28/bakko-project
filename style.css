@@ -296,3 +296,94 @@ nav .line.active {
     gap: 48px;
 }
 
+.projects-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 32px;
+    border: 2px var(--secondary-color) solid;
+    width: 100%;
+    height: 100vh;
+}
+
+.projects-page .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-page .content .left-box, .projects-page .content .right-box {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-page .content .cardbox {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    border: 6px var(--heading-text-color) solid;
+}
+
+.projects-page .content .right-box .heading-text {
+    width: 100%;
+    text-align: end;
+    font-family: var(--design-font);
+    color: var(--heading-text-color);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 96px;
+}
+
+.projects-page .content .left-box .archive-project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 80%;
+    gap: 32px;
+    position: relative;
+}
+
+.projects-page .content .left-box .archive-project-box p {
+    font-family: var(--grotesk-font);
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.projects-page .content .left-box .archive-project-box p span {
+    font-family: var(--design-font);
+    color: var(--text-color);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.projects-page .content .left-box .archive-project-box button {
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 36px;
+    font-family: var(--grotesk-font);
+    color: #114E00;
+    background-color: #FFA200;
+    border: none;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    width: 84%;
+    padding: 24px 0px;
+}
+
+.projects-page .content .left-box .archive-project-box .line-vector3 {
+    position: absolute;
+    right: 20px;
+}
