@@ -47,6 +47,11 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid #0008FF;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .welcome-page {
     border: 2px var(--secondary-color) solid;
     width: 100%;
@@ -386,4 +391,106 @@ nav .line.active {
 .projects-page .content .left-box .archive-project-box .line-vector3 {
     position: absolute;
     right: 20px;
+}
+
+.all-projects-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    border: 2px var(--secondary-color) solid;
+    gap: 32px;
+    padding: 16px;
+}
+
+.all-projects-page .content {
+    gap: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.all-projects-page .content .textbox {
+    width: 40%;
+    gap: 24px;
+    height: 10%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.all-projects-page .content .textbox img{
+    position: absolute;
+    bottom: -30px;
+    right: 140px;
+}
+
+.all-projects-page .content .textbox .heading-text {
+    width: auto;
+    line-height: 48px;
+}
+
+.all-projects-page .content .textbox .paragraph-text {
+    width: auto;
+    font-family: var(--grotesk-font);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.all-projects-page .content .cardbox {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    align-items: start;
+    justify-content: start;
+    grid-template-columns: repeat(4, 416px);
+    width: 100%;
+    height: 100%;
+}
+
+.all-projects-page .content .cardbox .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-size: cover;
+    width: 416px;
+    height: 234px;
+}
+
+.all-projects-page .content .cardbox .card .textbox {
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 16px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: var(--grotesk-font);
+}
+
+.all-projects-page .content .cardbox .card .textbox .card-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.all-projects-page .content .cardbox .card .textbox .card-info {
+    color: #727272;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
 }
