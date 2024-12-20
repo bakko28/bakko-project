@@ -342,9 +342,9 @@ nav .line.active {
     text-align: end;
     font-family: var(--design-font);
     color: var(--heading-text-color);
-    font-size: 96px;
+    font-size: 92px;
     font-weight: 400;
-    line-height: 96px;
+    line-height: 92px;
 }
 
 .projects-page .content .left-box .archive-project-box {
@@ -416,7 +416,7 @@ nav .line.active {
 }
 
 .all-projects-page .content .textbox {
-    width: 40%;
+    width: 50%;
     gap: 24px;
     height: 10%;
     display: flex;
