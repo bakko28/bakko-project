@@ -135,6 +135,72 @@ main .welcome-page .right-box .downloads-buttons button {
     outline: none;
 }
 
+main .destinations-page {
+    padding: 0px 139px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    gap: 42px;
+    height: 100vh;
+    border: 2px red solid;
+}
+
+main .destinations-page .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .destinations-page .textbox .heading-text{
+    font-family: var(--lato-font);
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+}
+
+main .destinations-page .textbox .paragraph-text{
+    font-family: var(--lato-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+main .destinations-page .cardbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+main .destinations-page .cardbox .card {
+    width: 296px;
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #F0F0F0;
+}
+
+main .destinations-page .cardbox .card .place-info {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    font-family: var(--lato-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #8f8f8f;
+    gap: 8px;
+}
+
+main .destinations-page .cardbox .card .textbox .hea
+
 footer {
     width: 100%;
     border: 2px blue solid;
