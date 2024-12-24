@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "TildaSans-VF";
+    src: url(fonts/TildaSans-VF.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E0D0D;
+    color: #fff;
+    font-family: "TildaSans-VF";
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 32px 180px;
+    gap: 32px;
+}
+
+header {
+    border: 3px #2A5E85 solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 32px;
+}
+
+header .userbox {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .userbox .user-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+}
+
+header .userbox .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+}
+
+header .userbox .textbox .username {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+header .userbox .textbox .price-count {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+header .userbox .textbox .price-count span {
+    font-weight: 600;
+    color: #7BCFFF;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    border: 3px #2A5E85 solid;
+}
