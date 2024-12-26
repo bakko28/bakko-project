@@ -1,84 +1,127 @@
-/* @font-face {
-    font-family: "TildaSans-VF";
-    src: url(fonts/TildaSans-VF.ttf);
+@font-face {
+  font-family: "TildaSans-VF";
+  src: url(fonts/TildaSans-VF.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "TildaSans-VF";
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    gap: 32px;
-} */
+  font-family: "TildaSans-VF";
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  gap: 24px;
+  background-color: #1c1c1c;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
+header {
+  width: 100%;
+  height: 10%;
+  border: 2px red solid;
+}
 
-  .carousel {
-    display: flex;
-    overflow: hidden;
-    width: 300px;
-    height: 100px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    position: relative;
-    background-color: #fff;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 930px;
+  gap: 16px;
+  border: 2px red solid;
+}
 
-  .carousel-track {
-    display: flex;
-    transition: transform 0.3s ease;
-  }
+a {
+  text-decoration: none;
+}
 
-  .carousel-item {
-    flex: 0 0 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border-radius: 8px;
-    margin: 0 5px;
-  }
+main nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px;
+  border: 2px green solid;
+}
 
-  .gray { background-color: gray; }
-  .blue { background-color: blue; }
-  .pink { background-color: pink; }
-  .green { background-color: green; }
-  .gold { background-color: gold; }
+main nav a {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 16px;
+  font-size: 36px;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
 
-  .button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    transition: background-color 0.3s;
-  }
+main nav a:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
 
-  .button:hover {
-    background-color: #0056b3;
-  }
+main .gamebox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  border: 2px blue solid;
+  width: 100%;
+  height: 100%;
+}
+
+main .gamebox .rightbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  padding: 8px;
+  gap: 16px;
+  height: 100%;
+}
+
+main .gamebox .rightbox .game-info {
+  border: 2px red solid;
+  width: 100%;
+  height: 70%;
+}
+
+main .gamebox .rightbox .bet-info {
+  border: 2px green solid;
+  width: 100%;
+  height: 30%;
+}
+
+main .gamebox .leftbox {
+  display: flex;
+  padding: 8px;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 35%;
+}
+
+main .gamebox .leftbox .betbox {
+  border: 2px green solid;
+  width: 100%;
+  height: 35%;
+}
+
+main .gamebox .leftbox .chatbox {
+  border: 2px red solid;
+  width: 100%;
+  height: 65%;
+}
+
